@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient login</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="icon.jpeg">
+    <script src="Zin.js"></script>
+</head>
+<body>
+    <script>
+        function validate(){
+             usn=document.forms["login"]["uses"];
+             psn=document.forms["login"]["pass"];
+            
+        if(usn.value==""){
+            alert("Please fill the username field");
+            usn.focus()
+            return false
+        }
+        else if(psn.value==""){
+            alert("Please fill the password field");
+            usn.focus()
+            return false
+        }
+        else if(usn.value=="S.Rai" && psn.value=="123"){
+            alert("Login Successfully");
+            return true
+        }
+        else{
+            alert("Username or password is incorrect");
+            return false
+        }
+    }
+    </script>
+    <header>
+        <nav> 
+            <h1>Best Online Doctor Consultation</h1>
+            <ul>
+                <li> <a href="home.html"style="color: black;">Home |</a>  </li>
+                <li><a href="./about.html"style="color: black;">About |</a></li>
+                <li>Location | </li>
+                <li> <a href="register.html" style="color: black;" >Register | </a></li>
+                <details class="login">
+                    <summary class="one">Log in</summary>
+                    <p class="two"> <a href="admin.html" style="color: black;">Admin</a></p><br>
+                    <p class="three"><a href="./doctor.html"style="color: black;">Doctor</a></p><br>
+                    <p class="four"><a href="./patient.html" style="color: black;">Patient</a> </p><br>
+                    
+                </details>
+            </ul>
+        </nav>
+    </header>
+    <form action="padash.html" class="adform" name="login"  onsubmit="return validate()" >
+        <fieldset class="dada" >
+        <legend align="center">Login</legend>
+        <table >
+            <tr>
+                <td><label>Login</label></td>
+                <td ><input type="text" placeholder="Enter the Username"class="input2" name="uses" > </td>
+            </tr>
+            <tr>
+                <td><label>Password</label></td>
+                <td ><input type="password" placeholder="Enter the password" class="input2" name="pass"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td ><input type="submit" class="input2"></td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+    <footer class="hello">
+        <h3 > 2/440,Marutham Poo Street,Vinoba Nagar,Karmathampatti,Coimbatore-641659</h3>
+        <h3 >Copyright © 2024 | All rights reserved.</h3>
+    </footer>
+    
+</body>
+</html>

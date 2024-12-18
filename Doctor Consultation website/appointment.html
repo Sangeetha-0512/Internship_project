@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.jpeg">  
+</head>
+<body >
+    <script>
+
+        function validate(){
+                     usn=document.forms["login"]["input2"];
+                     psn=document.forms["login"]["pass"];
+                    
+                if(usn.value==""){
+                    alert("Please fill the name field");
+                    usn.focus()
+                    return false
+                }
+                else if(psn.value==""){
+                    alert("Please fill the phonenumber field");
+                    usn.focus()
+                    return false
+                }
+                else {
+                    alert("Register Successfully");
+                    return true
+                }
+               
+                
+            }
+                </script>
+            <style>
+                *{
+            margin: 0;  
+        }
+        header{
+            position: fixed;
+            width: 100%;
+            margin-top: -130px;
+              
+        }
+        h1{
+            color: black;
+            display: inline;
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        nav{
+            background-color: lightblue;
+            color: black;
+            padding: 15px;
+           
+            
+        }
+        ul,li,p{
+            list-style: none;
+            display: inline;
+            font-size: 20px;
+            
+        }
+        .login{
+            display: inline-block;
+            
+            
+        }
+        ul{
+            margin-left: 70%;
+            display: flex;
+            cursor: pointer;
+            
+        }
+        li:hover,.one:hover,.two:hover,.three:hover,.four:hover{
+            color: blue;
+        }
+        .first{
+            margin-left: 30%;
+           
+        }
+        .dada{
+            background-color: lightblue;
+        }
+        .adform{
+           width: 450px;
+            margin-top: 119px;
+            margin-left: 450px;
+            font-size: 25px;
+            
+        
+        }
+        .input2{
+            height: 50px;
+            width: 300px;
+        }
+        .hello{
+            background-color: lightblue;
+            margin-top:13%;
+            padding: 30px;
+            text-align: center;
+            color: black;
+            
+        }
+            </style>
+    
+         <!-- .unique{
+            width: 160px;
+            height: 70px;
+            background-color: blue;
+            color: white;
+            margin-top: 25%;
+            margin-left: 100px;
+            cursor: pointer;
+        }
+        .unique:hover{
+            color: red;
+        }
+        .bgimg{
+            background-repeat:no-repeat;
+            width: 100%;
+            background-size: 1550px;
+            padding-bottom: 20px;
+            
+        }
+        .uni{
+            width: 170px;
+            height: 70px;
+            background-color: blue;
+            color: white;
+            margin-top: 20px;
+            margin-left: 45%;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+        .uni:hover{
+            color: red;
+        }
+        .lasth1{
+            margin-top: 30px;
+        }  -->
+    <header>
+        <nav> 
+            <h1>Best Online Doctor Consultation</h1>
+            <ul>
+                <li> <a href="home.html"style="color: black;">Home |</a>  </li>
+                <li><a href="./about.html"style="color: black;">About |</a></li>
+                <li>Location | </li>
+                <li> <a href="register.html" style="color: black;" >Register | </a></li>
+                <details class="login">
+                    <summary class="one">Log in</summary>
+                    <p class="two"> <a href="admin.html "style="color: black;">Admin</a></p><br>
+                    <p class="three"><a href="./doctor.html" style="color: black;">Doctor</a></p><br>
+                    <p class="four"><a href="./patient.html" style="color: black;">Patient</a> </p><br>
+                    
+                </details>
+            </ul>
+        </nav>
+    </header>
+    <form class="adform" name="login" onsubmit=" return validate()" >
+        
+        <fieldset style="width: 600px;" class="dada">
+            <table>
+                <center>
+            <legend>Book an Appointment</legend>
+        </center>
+        <tr>
+            <td>Name</td>
+            <td><input type="text"  placeholder="Enter your name" class="input2" name="input2" ></td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td><input type="number" placeholder="Enter your Age" class="input2"></td>
+        </tr>
+        <tr>
+            <td><label>Type</label></td>
+            <td><select>
+                    <option disabled selected>Choose the type </option>
+                        <option value="u1">Consultation</option>
+                        <option value="u2">Awareness Camp</option>
+                        <option value="u3">Aware of diseases</option>
+                        <option value="u4">Rid ofaddiction</option>
+                        <option value="u5">Health promotition steps</option>                   
+            </select></td>
+        </tr>
+        
+        <tr>
+            <td><label>Timing</label></td>
+            <td><select>
+                    <option disabled selected>Choose the timing </option>
+                        <option value="u1">Morning</option>
+                        <option value="u2">Afternoon</option>
+                        <option value="u3">Evening</option>
+                                          
+            </select></td>
+        </tr>
+        <tr>
+            <td><label>Mode</label></td>
+            <td><select>
+                    <option disabled selected>Choose the Mode </option>
+                        <option value="u1">Online</option>
+                        <option value="u2">Offline</option>
+                        
+                                          
+            </select></td>
+        </tr>
+        <tr >
+            <td></td>
+            <td ><input type="submit" value="Register" style="background-color: red; color: white;"></td>
+        </tr>
+    </table>
+        </fieldset>
+        
+    </form>
+    <footer class="hello">
+        <h3 > 2/440,Marutham Poo Street,Vinoba Nagar,Karmathampatti,Coimbatore-641659</h3>
+        <h3 >Copyright © 2024 | All rights reserved.</h3>
+    </footer>
+    </body>
+    </html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="icon" href="icon.jpeg">  
+    <link rel="stylesheet" href="">
+</head>
+<body >
+    <script>
+
+function validate(){
+             usn=document.forms["login"]["input2"];
+             psn=document.forms["login"]["pass"];
+            
+        if(usn.value==""){
+            alert("Please fill the name field");
+            usn.focus()
+            return false
+        }
+        else if(psn.value==""){
+            alert("Please fill the phonenumber field");
+            usn.focus()
+            return false
+        }
+        else {
+            alert("Register Successfully");
+            return true
+        }
+       
+        
+    }
+        </script>
+    <style>
+        *{
+    margin: 0;  
+}
+header{
+    position: fixed;
+    width: 100%;
+    margin-top: -25px;
+      
+}
+h1{
+    color: black;
+    display: inline;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+nav{
+    background-color: lightblue;
+    color: black;
+    padding: 15px;
+   
+    
+}
+ul,li,p{
+    list-style: none;
+    display: inline;
+    font-size: 20px;
+    
+}
+.login{
+    display: inline-block;
+    
+    
+}
+ul{
+    margin-left: 70%;
+    display: flex;
+    cursor: pointer;
+    
+}
+li:hover,.one:hover,.two:hover,.three:hover,.four:hover{
+    color: blue;
+}
+.first{
+    margin-left: 40%;
+   
+}
+.dada{
+    background-color: lightblue;
+}
+.adform{
+   width: 450px;
+    margin-top: 119px;
+    margin-left: 550px;
+    font-size: 25px;
+    
+
+}
+.input2{
+    height: 50px;
+    width: 300px;
+}
+.hello{
+    background-color: lightblue;
+    margin-top:5%;
+    padding: 30px;
+    text-align: center;
+    color: black;
+    
+}
+.domain{
+    padding-top: 20%;
+    padding-bottom: 11%;
+    font-size: 30px;
+    margin-left: 20%;
+    
+}
+.last{
+    width: 500px;
+    height: 100px;
+    font-size: 30px;
+}
+    </style>
+    <header> 
+        <nav> 
+            <h1>Best Online Doctor Consultation</h1>
+            <ul>
+                <li> <a href="home.html"style="color: black;">Home |</a>  </li>
+                <li><a href="./about.html"style="color: black;">About |</a></li>
+                <li>Location | </li>
+                <li> <a href="register.html" style="color: black;" >Register | </a></li>
+                <details class="login">
+                    <summary class="one" style="color: black;">Log in</summary>
+                    <p class="two"> <a href="admin.html "style="color: black;">Admin</a></p><br>
+                    <p class="three"><a href="./doctor.html" style="color: black;">Doctor</a></p><br>
+                    <p class="four"><a href="./patient.html" style="color: black;">Patient</a> </p><br>
+                    
+                </details>
+            </ul>
+        </nav>
+    </header> 
+
+    <form class="domain">
+        <fieldset style="width: 700px;">
+        <table>
+            <tr>
+            <td>
+                <ul>
+                    <details >                       
+                        <summary class="one">Menu</summary>
+                        <p class="docrecord">Doctor </p><br>
+                        <p class="patientrecord">Patient</p><br>  
+                    </details>
+                </ul>
+            </td>
+            </tr>
+        </table>
+    </fieldset>
+    </form>
+
+
+    <footer class="hello">
+        <h3 > 2/440,Marutham Poo Street,Vinoba Nagar,Karmathampatti,Coimbatore-641659</h3>
+        <h3 >Copyright © 2024 | All rights reserved.</h3>
+    </footer>
+    </body>
+    </html>

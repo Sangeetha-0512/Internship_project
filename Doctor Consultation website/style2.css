@@ -1,0 +1,55 @@
+*{
+    margin: 0;  
+}
+h1{
+    color: black;
+    display: inline;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    background-color: lightblue;
+    color: black;
+    padding: 15px;
+}
+ul,li,p{
+    list-style: none;
+    display: inline;
+    font-size: 20px;
+}
+.login{
+    display: inline-block;
+    
+}
+ul{
+    margin-left: 70%;
+    display: flex;
+    cursor: pointer;
+}
+li:hover,.one:hover,.two:hover,.three:hover,.four:hover{
+    color: blue;
+}
+.dada{
+    background-color: lightblue;
+}
+.adform{
+   width: 450px;
+    margin-top: 200px;
+    margin-left: 550px;
+    font-size: 25px;
+    
+
+}
+.input2{
+    height: 50px;
+    width: 300px;
+}
+.hello{
+    background-color: lightblue;
+    padding: 29px;
+    text-align: center;
+    color: black;
+    margin-top: 115px;
+}
+
